@@ -9,6 +9,16 @@
 <body>
     <h1>Product</h1>
     <div>
+        @if (session()->has('success'))
+            <div>
+                {{session('success')}}
+            </div>
+        @endif
+    </div>
+    <div>
+        <div>
+            <a href="{{route('products.create')}}">Create a Product</a>
+        </div>
         <table border="1">
             <tr>
                 <th>ID</th>
@@ -17,6 +27,7 @@
                 <th>Price</th>
                 <th>Description</th>
                 <th>Edit</th>
+                <th>Delete</th>
             </tr>
              @foreach ($viewProducts as $product )
                  <tr>
@@ -27,6 +38,13 @@
                     <td>{{$product->description}}</td>
                     <td>
                         <a href="{{route('products.edit',['product' => $product])}}">Edit</a>
+                    </td>
+                    <td>
+                        <form method="POST" action="{{route('products.delete',['product' => $product])}}">
+                            @csrf
+                            @method('delete')
+                            <input type="submit" value="Delete">
+                        </form>
                     </td>
 
                  </tr>
