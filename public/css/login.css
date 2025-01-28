@@ -1,0 +1,87 @@
+/* body {
+    background-image: url('/images/login_page.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+} */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/images/login_page.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* Centering the form */
+.loginForm {
+    background: #000000;
+    opacity: 0.6;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    height: 50%;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+.label{
+    color: white;
+}
+/* Input fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+label {
+    color: #ffffff;
+}
+/* Remember me checkbox */
+label.inline-flex {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/* Button */
+x-primary-button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+x-primary-button:hover {
+    background-color: #4338ca;
+}
+
+/* Forgot Password Link */
+a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

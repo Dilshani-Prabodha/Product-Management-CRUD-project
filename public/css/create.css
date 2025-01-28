@@ -1,0 +1,88 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('/images/add_products.jpg'); /* replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Heading style */
+h1 {
+    text-align: left;
+    margin-left: 180px;
+    margin-top: 50px;
+    color: #333;
+}
+
+/* Error message styling */
+ul {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #f5c6cb;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 30px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Ensure form inputs are aligned and responsive */
+div {
+    margin-bottom: 15px;
+}

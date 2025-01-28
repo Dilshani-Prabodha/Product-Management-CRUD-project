@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/create.css') }}">
 </head>
 <body>
     <h1>Create a Product</h1>
@@ -13,11 +14,7 @@
         <ul>
             @foreach ($errors->all() as $error)
             <li>{{$error}}</li>
-                
             @endforeach
-
-
-
         </ul>
             
         @endif
@@ -45,5 +42,8 @@
             <input type="submit" value="Save a New Product">
         </div>
     </form>
+    <div class="dashButton">
+        <input type="button" value="Dashboard" onclick="window.location='{{ route('dashboard') }}'" style="background-color: black; color: white; position: absolute; top: 5%; left: 90%; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+    </div>
 </body>
 </html>
